@@ -1,0 +1,10 @@
+---
+ - hosts: all
+   become: yes
+   tasks:
+   - name: i am ping
+     ping:
+   - name: install tree
+     apt: 
+       name: tree
+       state: present
